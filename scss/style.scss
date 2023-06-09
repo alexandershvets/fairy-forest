@@ -15,12 +15,12 @@
 // @import 'fonts/icons';
 
 // ШРИФТ ПО УМОЛЧАНИЮ
-$fontFamily: raleway-c;
-$fontWaight: 700;
+$fontFamily: raleway-f, sans-serif;
+$fontWaight: 400;
 $fontSize: rem(16); // где 18(px) - размер шрифта по умолчанию из макета
 
 // ОСНОВНЫЕ ЦВЕТА
-$mainColor: #f4efec; // Цвет шрифта по умолчанию
+$mainColor: #333; // Цвет шрифта по умолчанию
 $mainDarkColor: #0e101a;
 
 // НАСТРОЙКИ
@@ -47,7 +47,6 @@ $responsiveType: 1;
 @import 'base/null';
 
 body {
-  background: /* $mainDarkColor */ url('../img/bg.jpg') 0 0 /50px repeat;
   // Скролл заблокирован
   .lock & {
     overflow: hidden;

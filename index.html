@@ -10,21 +10,30 @@
 
   <link rel="stylesheet" href="css/style.css">
   <script src="js/app.js" defer></script>
-
 </head>
 
 <body>
   <div class="wrapper">
 
     <header class="header">
-      <div class="header__container">
-        HEADER
+      <div class="header__layers layers">
+        <div class="layers__header">
+          <div class="layers__caption">Welcome to parallax</div>
+          <div class="layers__title">Fairy Forest</div>
+        </div>
+        <div class="layers__base layer" style="background-image: url(img/layer-base.png);"></div>
+        <div class="layers__title layer" style="background-image: url(img/layer-middle.png);"></div>
+        <div class="layers__front layer" style="background-image: url(img/layer-front.png);"></div>
       </div>
     </header>
 
-    <main class="page">
-      MAIN
-    </main>
+    <article class="main-article" style="background-image: url(img/dungeon.jpg);">
+      <div class="main-article__content">
+        <h2 class="main-article__title"></h2>
+        <p class="main-article__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis error provident dignissimos facere. Repellendus tempore autem qui! Quia magnam tempora esse id necessitatibus corrupti mollitia expedita sapiente cum rerum, ut dicta laboriosam!</p>
+        <div class="copy">© alexandershvets</div>
+      </div>
+    </article>
 
     <footer class="footer">
       <div class="footer__container">
