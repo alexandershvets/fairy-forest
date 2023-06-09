@@ -20,13 +20,17 @@ $fontWaight: 400;
 $fontSize: rem(16); // где 18(px) - размер шрифта по умолчанию из макета
 
 // ОСНОВНЫЕ ЦВЕТА
-$mainColor: #333; // Цвет шрифта по умолчанию
+$mainColor: #fefefe; // Цвет шрифта по умолчанию
+$textColor: #e7e7e0;
 $mainDarkColor: #0e101a;
+
+$index: calc(1vw + 1vh);
+$transition: transform 0.75s cubic-bezier(0.075, 0.5, 0, 1);
 
 // НАСТРОЙКИ
 $minWidth: 320; // Минимальная ширина страницы
-$maxWidth: 3800; // Ширина полотна (макета)
-$maxWidthContainer: 3220; // Ширина ограничивающего контейнера (0 = нет ограничения)
+$maxWidth: 1920; // Ширина полотна (макета)
+$maxWidthContainer: 1370; // Ширина ограничивающего контейнера (0 = нет ограничения)
 $containerPadding: 30; // Общий отступ у контейнера (30 = по 15px слева и справа, 0 = нет отступа)
 
 $containerWidth: $maxWidthContainer + $containerPadding; // Ширина срабатывания первого брейкпоинта
@@ -47,6 +51,7 @@ $responsiveType: 1;
 @import 'base/null';
 
 body {
+  background-color: $mainDarkColor;
   // Скролл заблокирован
   .lock & {
     overflow: hidden;
@@ -132,7 +137,7 @@ body {
 
 // Подключение стилей отдельных блоков
 @import 'header';
-@import 'footer';
+// @import 'footer';
 
 // Подключение стилей отдельных страниц
 @import 'home';

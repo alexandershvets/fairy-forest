@@ -1,1 +1,7 @@
 // Заголовки, общие БЄМ блоки и проче...
+.layer,
+.content,
+.header-layer,
+.main-article__content {
+  will-change: transform;
+}
